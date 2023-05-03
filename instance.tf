@@ -11,3 +11,11 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+resource "aws_instance" "web1" {
+  ami             = "ami-0889a44b331db0194"
+  instance_type   = "t3.micro"
+  
+  tags = {
+    Name = "HelloWorld"
+  }
+}
